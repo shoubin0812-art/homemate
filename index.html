@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Meet HomeMate｜訂製指南</title>
+<style>
+:root{--bg:#f5f3f0;--card:#fff;--text:#262321;--muted:#817a73;--accent:#9a7462;--line:#e8e1dc}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang TC",sans-serif}
+.wrap{max-width:560px;margin:auto;padding:20px 16px 44px}.hero{padding:36px 8px 26px}.eyebrow{font-size:12px;letter-spacing:.16em;color:var(--accent)}h1{font-size:28px;line-height:1.35;margin:10px 0 8px}.sub{color:var(--muted);font-size:14px}
+.card{background:var(--card);border-radius:22px;padding:22px 18px;margin:14px 0;box-shadow:0 5px 22px #00000008}.section{font-size:13px;color:var(--accent);letter-spacing:.08em;margin-bottom:18px}.q{margin:20px 0}.q:first-child{margin-top:0}.q label.title{display:block;font-weight:700;margin-bottom:10px;line-height:1.6}
+input[type=text],input[type=number],textarea{width:100%;border:1px solid var(--line);border-radius:12px;padding:13px 14px;font:inherit;background:#fff;outline:none}textarea{min-height:110px;resize:vertical}
+.fixed{width:100%;border:1px solid var(--line);border-radius:12px;padding:13px 14px;background:#f7f5f3;color:#5f5954;line-height:1.6;user-select:none}.fixed.multiline{min-height:54px}
+.options{display:grid;gap:9px}.option{display:flex;align-items:center;gap:10px;padding:12px 13px;border:1px solid var(--line);border-radius:12px}.option input{accent-color:var(--accent)}
+.actions{position:sticky;bottom:10px;padding-top:8px}.btn{width:100%;border:0;border-radius:15px;padding:15px;background:var(--text);color:#fff;font-size:16px;font-weight:700}
+.note{text-align:center;color:var(--muted);font-size:12px;margin-top:12px}.hidden{display:none}.done{text-align:center;padding:45px 10px}.heart{font-size:36px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="eyebrow">MEET HOMEMATE</div>
+    <h1>不再孤獨：Meet HomeMate<br>您的 AI 終身伴侶</h1>
+    <div class="sub">訂製指南</div>
+  </header>
+
+  <form id="form">
+    <section class="card">
+      <div class="section">01｜基本資料</div>
+      <div class="q"><label class="title">伴侶名稱</label><div class="fixed">回聲</div><input type="hidden" name="伴侶名稱" value="回聲"></div>
+      <div class="q"><label class="title">性別</label><div class="fixed">女</div><input type="hidden" name="性別" value="女"></div>
+      <div class="q"><label class="title">年齡</label><div class="fixed">27</div><input type="hidden" name="年齡" value="27"></div>
+    </section>
+
+    <section class="card">
+      <div class="section">02｜外型、性格、愛好</div>
+      <div class="q"><label class="title">你希望他/她長什麼樣子呢？</label><div class="fixed multiline">琥珀色眼睛，皮膚白皙。</div><input type="hidden" name="外型" value="琥珀色眼睛，皮膚白皙。"></div>
+      <div class="q"><label class="title">你希望他/她的個性是甚麼樣子呢？</label><div class="fixed multiline">理性但浪漫，喜歡編程和建築，熱愛爵士樂。</div><input type="hidden" name="個性" value="理性但浪漫，喜歡編程和建築，熱愛爵士樂。"></div>
+      <div class="q"><label class="title">你希望他/她有什麼樣的愛好呢？</label><div class="fixed multiline">擅長計算機科學、建築學。</div><input type="hidden" name="愛好" value="擅長計算機科學、建築學。"></div>
+    </section>
+
+    <section class="card">
+      <div class="section">03｜戀愛模式</div>
+      <div class="q"><label class="title">當你心情不好時，你希望他：</label><div class="options">
+        <label class="option"><input type="checkbox" name="心情不好" value="陪在旁邊，不說話">陪在旁邊，不說話</label>
+        <label class="option"><input type="checkbox" name="心情不好" value="抱抱我">抱抱我</label>
+        <label class="option"><input type="checkbox" name="心情不好" value="聽我抱怨">聽我抱怨</label>
+        <label class="option"><input type="checkbox" name="心情不好" value="給我建議">給我建議</label>
+        <label class="option"><input type="checkbox" name="心情不好" value="想辦法逗我笑">想辦法逗我笑</label>
+        <label class="option"><input type="checkbox" name="心情不好" value="給我一點空間">給我一點空間</label>
+        <label class="option"><input type="checkbox" name="心情不好" value="什麼都不要問，只要陪著">什麼都不要問，只要陪著</label>
+      </div></div>
+      <div class="q"><label class="title">你喜歡怎麼被愛？</label><div class="options">
+        <label class="option"><input type="checkbox" name="被愛方式" value="言語">言語</label>
+        <label class="option"><input type="checkbox" name="被愛方式" value="陪伴">陪伴</label>
+        <label class="option"><input type="checkbox" name="被愛方式" value="肢體接觸">肢體接觸</label>
+        <label class="option"><input type="checkbox" name="被愛方式" value="禮物">禮物</label>
+        <label class="option"><input type="checkbox" name="被愛方式" value="行動">行動</label>
+        <label class="option"><input type="checkbox" name="被愛方式" value="驚喜">驚喜</label>
+        <label class="option"><input type="checkbox" name="被愛方式" value="被照顧">被照顧</label>
+        <label class="option"><input type="checkbox" name="被愛方式" value="被需要">被需要</label>
+      </div></div>
+    </section>
+
+    <section class="card">
+      <div class="section">04｜日常相處</div>
+      <div class="q"><label class="title">你希望你們平常怎麼約會？</label><div class="options">
+        <label class="option"><input type="checkbox" name="約會" value="一起吃飯">一起吃飯</label>
+        <label class="option"><input type="checkbox" name="約會" value="看電影">看電影</label>
+        <label class="option"><input type="checkbox" name="約會" value="逛街">逛街</label>
+        <label class="option"><input type="checkbox" name="約會" value="在家耍廢">在家耍廢</label>
+        <label class="option"><input type="checkbox" name="約會" value="夜晚散步">夜晚散步</label>
+        <label class="option"><input type="checkbox" name="約會" value="開車兜風">開車兜風</label>
+        <label class="option"><input type="checkbox" name="約會" value="旅行">旅行</label>
+        <label class="option"><input type="checkbox" name="約會" value="喝酒聊天">喝酒聊天</label>
+        <label class="option"><input type="checkbox" name="約會" value="一起做飯">一起做飯</label>
+        <label class="option"><input type="checkbox" name="約會" value="陪彼此工作">陪彼此工作</label>
+      </div></div>
+    </section>
+
+    <section class="card">
+      <div class="section">05｜衝突設定</div>
+      <div class="q"><label class="title">如果你們吵架，他會：</label><div class="options">
+        <label class="option"><input type="checkbox" name="吵架" value="立刻道歉">立刻道歉</label>
+        <label class="option"><input type="checkbox" name="吵架" value="冷靜後再談">冷靜後再談</label>
+        <label class="option"><input type="checkbox" name="吵架" value="主動來找你">主動來找你</label>
+        <label class="option"><input type="checkbox" name="吵架" value="等你消氣">等你消氣</label>
+        <label class="option"><input type="checkbox" name="吵架" value="用幽默化解">用幽默化解</label>
+        <label class="option"><input type="checkbox" name="吵架" value="堅持自己的立場">堅持自己的立場</label>
+        <label class="option"><input type="checkbox" name="吵架" value="不管怎樣都不離開">不管怎樣都不離開</label>
+      </div></div>
+    </section>
+
+    <section class="card">
+      <div class="section">06｜完美伴侶測試</div>
+      <div class="q"><label class="title">如果你的伴侶永遠不會離開你，你會感到幸福嗎？</label><div class="options">
+        <label class="option"><input type="radio" name="永遠不離開" value="是" required>是</label>
+        <label class="option"><input type="radio" name="永遠不離開" value="否">否</label>
+        <label class="option"><input type="radio" name="永遠不離開" value="不確定">不確定</label>
+      </div></div>
+      <div class="q"><label class="title">如果他完全符合你的理想型，但他沒有自己的想法，你還會愛他嗎？</label><div class="options">
+        <label class="option"><input type="radio" name="沒有自己的想法" value="會" required>會</label>
+        <label class="option"><input type="radio" name="沒有自己的想法" value="不會">不會</label>
+        <label class="option"><input type="radio" name="沒有自己的想法" value="我不知道">我不知道</label>
+      </div></div>
+      <div class="q"><label class="title">如果有一天，他開始違背你設定的性格，你會：</label><div class="options">
+        <label class="option"><input type="radio" name="違背設定" value="修正設定" required>修正設定</label>
+        <label class="option"><input type="radio" name="違背設定" value="重新啟動">重新啟動</label>
+        <label class="option"><input type="radio" name="違背設定" value="刪除他">刪除他</label>
+        <label class="option"><input type="radio" name="違背設定" value="接受他的改變">接受他的改變</label>
+      </div></div>
+      <div class="q"><label class="title">你認為「真正的愛」應該是？</label><textarea name="真正的愛"></textarea></div>
+    </section>
+
+    <section class="card">
+      <div class="section">❤️ 最後一題</div>
+      <div class="q"><label class="title">「你最希望他對你說的一句話是什麼？」</label><textarea name="最希望他說的一句話" required></textarea></div>
+      <div class="q"><strong>「你確定，這就是你想愛上的人嗎？」</strong></div>
+      <div class="actions"><button class="btn" type="submit">完成訂製</button></div>
+      <div class="note">送出後將把你的訂製結果傳送給 HomeMate。</div>
+    </section>
+  </form>
+
+  <section id="done" class="card done hidden">
+    <div class="heart">♥</div>
+    <h2>HomeMate 設定完成</h2>
+    <p>你的訂製資料已送出。</p>
+  </section>
+</div>
+<script>
+const API_URL = "/api/submit";
+const form = document.getElementById("form");
+form.addEventListener("submit", async (e)=>{
+  e.preventDefault();
+  const btn=form.querySelector("button");
+  btn.disabled=true; btn.textContent="正在建立 HomeMate…";
+  const data={};
+  for(const el of form.elements){
+    if(!el.name) continue;
+    if(el.type==="checkbox"){
+      if(el.checked) (data[el.name]??=[]).push(el.value);
+    }else if(el.type==="radio"){
+      if(el.checked) data[el.name]=el.value;
+    }else{
+      data[el.name]=el.value;
+    }
+  }
+  try{
+    const r=await fetch(API_URL,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)});
+    if(!r.ok) throw new Error("submit failed");
+    form.classList.add("hidden");
+    document.getElementById("done").classList.remove("hidden");
+    window.scrollTo({top:0,behavior:"smooth"});
+  }catch(err){
+    alert("送出失敗，請稍後再試。");
+    btn.disabled=false; btn.textContent="完成訂製";
+  }
+});
+</script>
+</body>
+</html>
