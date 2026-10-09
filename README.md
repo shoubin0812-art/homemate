@@ -12,3 +12,4 @@
 設定到 LINE Developers 的 Webhook URL，並啟用 Use webhook。
 
 官方帳號在目標群組內收到任意訊息後，Webhook 會把 groupId 回傳到該群組，方便複製到 Vercel。
+Deployment update
