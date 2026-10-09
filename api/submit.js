@@ -40,7 +40,7 @@ ${d["最希望他說的一句話"] || "未填寫"}
 「你確定，這就是你想愛上的人嗎？」`;
 
     const token = process.env.LINE_CHANNEL_ACCESS_TOKEN;
-    const to = process.env.LINE_TO_USER_ID;
+    const to = process.env.LINE_TO_GROUP_ID;
     if (!token || !to) return res.status(500).json({error:"LINE credentials are not configured"});
 
     const r = await fetch("https://api.line.me/v2/bot/message/push", {
